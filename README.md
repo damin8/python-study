@@ -1,4 +1,4 @@
-# 👀 TIL_Python
+# 🎫 python-study
 
 ### 🖥 RPA (Robotic Process Automation)
 
