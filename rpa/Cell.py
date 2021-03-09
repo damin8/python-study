@@ -1,12 +1,15 @@
 from openpyxl import Workbook
+from random import *
 
 wb = Workbook()
 ws = wb.active
 ws.title = "Favian's Sheet"
 
-ws["A1"] = 1
-print(ws["A1"])
-print(ws["A1"].value)  # 값이 없을 때는 "None" 출력
+index = 1
 
-c = ws.cell(column=3, row=1, value=10)  # == ws["C1"].value = 10
-print(c.value)
+for x in range(1, 11):
+    for y in range(1, 11):
+        ws.cell(x, y, index)
+        index += 1
+
+wb.save("sample.xlsx")
